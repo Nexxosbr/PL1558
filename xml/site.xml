@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<page id="pg01" title="Introdução" src="pg01.swf"/>
+	<page id="pg02" title="Colocação, integração e ocultação" src="pg02.swf"/>
+	<page id="pg03" title="Legislação brasileira" src="pg03.swf"/>
+	<page id="pg04" title="COAF" src="pg04.swf"/>
+	<page id="pg05" title="Procedimentos de prevenção" src="pg05.swf"/>
+	<page id="pg06" title="Na prática" src="pg06.swf"/>
+	<page id="pg07" title="Finalização" src="pg07.swf"/>
+</site>

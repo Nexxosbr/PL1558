@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" lang="pt-BR">
+		<title>Porto Seguro - PLD</title>
+		<script type="text/javascript" src="js/APIWrapper.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<style type="text/css">
+			body {background-color: #cccccc;}
+			#main{position: absolute; width: 800px; height: 600px; left: 50%; top:50%; margin-left: -400px; margin-top: -300px;}
+			#mainSwf{float:left; width:800px; height:600px;}	
+		</style>
+	    <script language='javascript' type='text/javascript' src='http://portoseguro.webaula.com.br/scormapi/unloadChrome.js?V01.20161103.1.003.000'></script>
+	</head>
+	<body onunload="callLMSFinish()" onbeforeunload="callLMSFinish()">
+		<div id="main">
+			<div id="mainSwf">
+				<div id="flashcontent">
+					<div id="noflash">
+						<p><strong>Para visualizar este conteudo é necessário instalar o Flash Player</strong></p>
+						<p>Clique <a href="http://get.adobe.com/br/flashplayer/">aqui</a> para ser direcionado para a página da adobe.</p>
+					</div>
+					<script type="text/javascript">
+						var flashvars = {};
+						var attributes = {};
+						var	params = {}; 
+
+						params.allowScriptAccess = "always";
+						params.allowFullScreen = "true";
+						params.loop = "false";
+						params.align = "middle";
+						params.scale = "true";
+						params.menu = "false";
+						params.quality = "high";
+						params.salign = "t";
+						params.bgcolor = "#ffffff";
+						params.scalemode = "noScale";
+						swfobject.embedSWF('index.swf', 'flashcontent', '800', '600', '9.0.0', 'expressInstall.swf', flashvars, params, attributes);
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var url = document.URL;
+		var isLMS = true;
+		
+		if(isLMS){
+			if(url.substring(0,4) != "http"){
+				isLMS = false;
+			}else{
+				document.write("<script src='js/SCOFunctions.js'><\/script>");
+			}
+		}
+		
+		
+		function callLMSFinish(){
+			if(isLMS){
+				unloadPage();
+				return "";
+			}
+		}
+		
+		function pegaValorLMS(){
+			return isLMS;
+		}
+	</script>
+</html>

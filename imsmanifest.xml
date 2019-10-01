@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!--This is a Reload version 2.5.2 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="pld" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<schemaversion>1.2</schemaversion>
+		<imsmd:lom>
+			<imsmd:general>
+				<imsmd:identifier>pld</imsmd:identifier>
+				<imsmd:title>
+					<imsmd:langstring xml:lang="en">Porto Seguro - PLD</imsmd:langstring>
+				</imsmd:title>
+				<imsmd:language>br</imsmd:language>
+				<imsmd:structure>
+					<imsmd:source>
+						<imsmd:langstring xml:lang="en">LOMv1.0</imsmd:langstring>
+					</imsmd:source>
+					<imsmd:value>
+						<imsmd:langstring xml:lang="x-none">Linear</imsmd:langstring>
+					</imsmd:value>
+				</imsmd:structure>
+			</imsmd:general>
+		</imsmd:lom>
+	</metadata>
+	<organizations default="ORG-70C51755-3CB9-89A5-B992-NNA787BE2080">
+		<organization identifier="ORG-70C51755-3CB9-89A5-B992-NNA787BE2080" structure="hierarchical">
+			<title>Porto Seguro - PLD</title>
+			<item identifier="item01" isvisible="true" identifierref="home">
+				<title>Curso</title>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="home" type="webcontent" href="index.html" adlcp:scormtype="sco">
+			<file href="index.html" />
+			<file href="index.swf" />      
+		</resource>
+	</resources>
+</manifest>
